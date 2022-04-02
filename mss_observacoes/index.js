@@ -19,8 +19,8 @@ app.post('/lembretes/:id/observacoes', (req, res) => {
 
 
 //GET
-app.get('/lembrete/:id/observacoes', (req, res) => {
-    //
+app.get('/lembretes/:id/observacoes', (req, res) => {
+    res.send(observacoesPorLembreteId[req.params.id] || []) 
 })
 
 
